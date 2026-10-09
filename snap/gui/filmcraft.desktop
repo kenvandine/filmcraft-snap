@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=FilmCraft
+GenericName=Video Editor
+Comment=Edit video, color and sound
+Exec=filmcraft %F
+Icon=${SNAP}/meta/gui/filmcraft.png
+Terminal=false
+StartupNotify=true
+StartupWMClass=ai.storyteller.filmcraft
+Categories=AudioVideo;Video;AudioVideoEditing;
+Keywords=video;editor;film;timeline;color;grading;nle;
