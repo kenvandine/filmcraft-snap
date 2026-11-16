@@ -30,6 +30,8 @@ apps:
     command: bin/filmcraft
     extensions: [gnome]
     common-id: ai.storyteller.filmcraft
+    command-chain:
+      - bin/alsa-launch
     plugs:
       - audio-playback
       - home
@@ -53,6 +55,8 @@ parts:
       - ca-certificates
       - curl
     stage-packages:
+      - libasound2-data
+      - libasound2-plugins
       - libvulkan1
       - libxkbcommon-x11-0
     override-pull: |
@@ -72,3 +76,4 @@ parts:
     override-build: |
       set -eu
       cp -a bin share "$CRAFT_PART_INSTALL/"
+      install -Dm755 "$CRAFT_PROJECT_DIR/snap/local/alsa-launch" "$CRAFT_PART_INSTALL/bin/alsa-launch"
