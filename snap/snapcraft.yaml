@@ -1,6 +1,6 @@
 name: filmcraft
 title: FilmCraft
-base: core24
+base: core26
 version: '0.20.1'
 summary: Video editor for video, colour and sound
 description: |
