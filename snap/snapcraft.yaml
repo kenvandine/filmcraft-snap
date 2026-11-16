@@ -55,7 +55,6 @@ parts:
       - ca-certificates
       - curl
     stage-packages:
-      - libasound2-data
       - libasound2-plugins
       - libvulkan1
       - libxkbcommon-x11-0
